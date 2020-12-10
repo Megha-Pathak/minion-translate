@@ -16,6 +16,7 @@ body {
   color: #333333;
   background-image: url(minion.jpg);
   background-repeat: no-repeat;
+  background-color: var(--primary);
   background-size: 100vmax;
 }
 
