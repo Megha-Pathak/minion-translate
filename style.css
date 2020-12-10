@@ -1,11 +1,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap");
+
 * {
   box-sizing: border-box;
 }
 
 :root {
   --primary: #f2c94c;
-  --black: #131212;
+  --black: #333333;
   --width-break: 600px;
 }
 
@@ -15,23 +16,23 @@ body {
   color: #333333;
   background-image: url(minion.jpg);
   background-repeat: no-repeat;
-  background-size: contain;
-  background-position: right;
+  background-size: 100vmax;
 }
 
 h1 {
+  margin-top: 0;
   background-color: var(--primary);
   text-align: center;
-  max-height: 10rem;
-  margin-top: 0;
+  background-color: var(--black);
+  color: aliceblue;
 }
 
 main {
   margin: auto;
   padding: 1rem;
-  max-width: 40%;
-  margin-left: 0rem;
+  max-width: var(--width-break);
 }
+
 textarea {
   box-sizing: border-box;
   display: block;
@@ -40,7 +41,6 @@ textarea {
   margin-top: 2rem;
   font-size: large;
   font-family: inherit;
-  margin-bottom: 4rem;
 }
 
 button {
@@ -52,7 +52,7 @@ button {
   border-radius: 3rem;
 }
 
-.inputtext {
+#output-text {
   box-sizing: border-box;
   width: 100%;
   min-height: 10vh;
@@ -66,12 +66,12 @@ footer {
   bottom: 0;
   width: 100%;
   padding: 1rem;
-  background-color: var(--primary);
+  background-color: var(--black);
+  color: aliceblue;
   text-align: center;
 }
 
 footer p {
   max-width: var(--width-break);
   margin: auto;
-  max-height: 5rem;
 }
